@@ -1,1 +1,1 @@
-https://picklelikespizza.github.io/midterm_community_proj/index.html
+https://maxhfel.github.io/Midterm-revisions/index.html
