@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tidal Buds - Design</title>
+    <!-- Derek's external CSS + font -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/sea4ybc.css">
+    <!-- My internal CSS: places my content in the 4-column grid -->
+    <style>
+        /* keep the subpage menu in the top-left box */
+        .subnav-menu {
+            grid-row: 2;
+            grid-column: 1;
+        }
+
+        .main-img {
+            grid-row: 2;
+            grid-column: 2 / span 3;
+        }
+
+        .image1 {
+            max-width: 100%;
+            max-height: 400px;
+        }
+
+        /* each content box gets its own row */
+        .main1 { grid-row: 3; }
+        .main2 { grid-row: 4; }
+        .main3 { grid-row: 5; }
+        .main4 { grid-row: 6; }
+        .main5 { grid-row: 7; }
+        .main6 { grid-row: 8; }
+
+        .main1, .main2, .main3, .main4, .main5, .main6 {
+            grid-column: 1 / span 3;
+            padding: 30px;
+        }
+
+        .sidecontent {
+            grid-row: 3 / span 6;
+            grid-column: 4;
+            padding: 30px;
+        }
+
+        .footer {
+            grid-row: 10;
+            grid-column: 1 / span 4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+
+        <div class="nav-menu grid-item">
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tech-design.html">Subpages</a></li>
+            </ul>
+        </div>
+
+        <div class="subnav-menu grid-item" style="height: 400px;">
+            <ul class="subnav">
+                <li><a href="tech-design.html">Design</a></li>
+                <li><a href="tech-WA.html">Microsoft Tech</a></li>
+                <li><a href="creation.html">Creation</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="benefits.html">Benefits</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="grid-item main-img">
+            <img src="images/dyearbuds.jpe" alt="Our waterproof earbuds in water" style="width:600px;height:400px;">
+        </div>
+
+        <div class="grid-item main1">
+            <h1>What Makes Our Design Revolutionary</h1>
+            <p>Most earbuds are only "water resistant." Ours are fully waterproof, so you can swim, surf, shower, or
+                really do anything with them.</p>
+            <h2>No Open Ports</h2>
+            <p>Charging ports are the main way water gets in, so our earbuds have none. They charge wirelessly in the
+                case, and the shell is sealed in one piece.</p>
+        </div>
+
+        <div class="grid-item main2">
+            <h2>Swim Mode</h2>
+            <p>Sound travels differently underwater. We added a swim mode that senses when you go under the water and
+                adjusts the audio so music stays clear.</p>
+        </div>
+
+        <!-- Reason Box 1 -->
+        <div class="grid-item main3">
+            <h2>Parent-Approved Privacy</h2>
+            <p>Engineered so that only you can hear your audio loud and clear, preventing anyone else nearby from
+                hearing your music or shower concerts.</p>
+        </div>
+
+        <!-- Reason Box 2 -->
+        <div class="grid-item main4">
+            <h2>Ultra-Secure Ergonomic Fit</h2>
+            <p>Our innovative shape locks safely and comfortably into your ear canal, guaranteeing they stay put no
+                matter how active your routine gets.</p>
+        </div>
+
+        <!-- Added Box 3: Long-Term Durability -->
+        <div class="grid-item main5">
+            <h2>Built to Last</h2>
+            <p>Constructed with premium, heavy-duty materials designed to resist wear and tear, ensuring your earbuds
+                last for years without losing sound quality.</p>
+        </div>
+
+        <!-- Added Box 4: Unbeatable Value -->
+        <div class="grid-item main6">
+            <h2>Smart Investment</h2>
+            <p>Get elite, professional-grade waterproof audio technology at a fraction of the cost of inferior
+                competitor brands.</p>
+        </div>
+
+        <div class="grid-item sidecontent">
+            <h3>Quick Specs</h3>
+            <p>Max depth: 3 meters</p>
+            <p>Charging: wireless case</p>
+        </div>
+
+        <!-- YouTube video -->
+        <div class="grid-item" style="grid-row:9; grid-column:1 / span 4; padding:30px;">
+            <h2>Waterproof vs. Water Resistant</h2>
+            <p>Not sure what IPX7 or IPX8 means? This video breaks down IP ratings and why "water resistant" isn't the same as waterproof.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xJrkp3mtE_I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="grid-item footer">
+            <p>2026 Max H</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
